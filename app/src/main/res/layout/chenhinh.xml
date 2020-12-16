@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,46 +7,46 @@
     android:background="#77d8d8"
     tools:context=".MainActivity">
 
-<!--    <ImageView-->
-<!--        android:adjustViewBounds="true"-->
-<!--        app:layout_constraintDimensionRatio="320:600"-->
-<!--        android:src="@drawable/marvel"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"/>-->
+    <!--    <ImageView-->
+    <!--        android:adjustViewBounds="true"-->
+    <!--        app:layout_constraintDimensionRatio="320:600"-->
+    <!--        android:src="@drawable/marvel"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"/>-->
 
-<!--    <TextView-->
-<!--        app:layout_constraintHorizontal_weight="2"-->
-<!--        app:layout_constraintHorizontal_chainStyle="spread"-->
-<!--        android:id="@+id/textView1"-->
-<!--        app:layout_constraintRight_toLeftOf="@id/textView2"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        android:text="View 1"-->
-<!--        android:textSize="30sp"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"/>-->
-<!--    <TextView-->
-<!--        app:layout_constraintHorizontal_weight="8"-->
-<!--        android:id="@+id/textView2"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintLeft_toRightOf="@id/textView1"-->
-<!--        android:text="View 2"-->
-<!--        android:textSize="30sp"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"/>-->
+    <!--    <TextView-->
+    <!--        app:layout_constraintHorizontal_weight="2"-->
+    <!--        app:layout_constraintHorizontal_chainStyle="spread"-->
+    <!--        android:id="@+id/textView1"-->
+    <!--        app:layout_constraintRight_toLeftOf="@id/textView2"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        android:text="View 1"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"/>-->
+    <!--    <TextView-->
+    <!--        app:layout_constraintHorizontal_weight="8"-->
+    <!--        android:id="@+id/textView2"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintLeft_toRightOf="@id/textView1"-->
+    <!--        android:text="View 2"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"/>-->
     <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:adjustViewBounds="true"
         android:src="@drawable/baemin"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="300dp"
-        android:layout_height="300dp"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text"
@@ -61,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"  />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -69,31 +68,32 @@
         android:layout_height="wrap_content"
         android:text="NÓNG GIÒN ĐÂY!"
         android:textSize="25dp"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text" />
 
     <Button
-        android:textSize="20dp"
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Kết nối với số điện thoại"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:textSize="20dp"
+
         android:id="@+id/button2"
-        android:text="Kết nối với Facebook"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
         android:background="#5f82c9"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="Kết nối với Facebook"
+        android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
